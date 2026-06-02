@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #ffffff;
+  --canvas-soft: #fafafa;
+  --canvas-soft-2: #f5f5f5;
+  --ink: #171717;
+  --primary: #171717;
+  --on-primary: #ffffff;
+  --body: #3d3d3d;
+  --mute: #666666;
+  --hairline: #ebebeb;
+  --hairline-strong: #a1a1a1;
+  --link: #0070f3;
+  --link-deep: #0761d1;
+  --link-bg-soft: #d3e5ff;
+  --selection-bg: #171717;
+  --selection-fg: #f2f2f2;
+  --shadow-sm: 0px 1px 1px #00000005, 0px 2px 2px #0000000a;
+  --gradient-mesh: radial-gradient(
+      at 27% 37%,
+      #007cf0 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 97% 21%, #7928ca 0px, transparent 50%),
+    radial-gradient(at 52% 99%, #ff0080 0px, transparent 50%),
+    radial-gradient(at 10% 29%, #50e3c2 0px, transparent 50%);
+}
+
+.dark {
+  --canvas: #0a0a0a;
+  --canvas-soft: #000000;
+  --canvas-soft-2: #171717;
+  --ink: #ededed;
+  --primary: #ffffff;
+  --on-primary: #171717;
+  --body: #c4c4c4;
+  --mute: #9a9a9a;
+  --hairline: #2a2a2a;
+  --hairline-strong: #666666;
+  --link: #3291ff;
+  --link-deep: #0070f3;
+  --link-bg-soft: #0d2847;
+  --selection-bg: #ededed;
+  --selection-fg: #171717;
+  --shadow-sm: 0px 1px 1px #00000020, 0px 2px 2px #00000030;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-canvas-soft: var(--canvas-soft);
+  --color-canvas-soft-2: var(--canvas-soft-2);
+  --color-ink: var(--ink);
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-body: var(--body);
+  --color-mute: var(--mute);
+  --color-hairline: var(--hairline);
+  --color-hairline-strong: var(--hairline-strong);
+  --color-link: var(--link);
+  --color-link-deep: var(--link-deep);
+  --color-link-bg-soft: var(--link-bg-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--canvas-soft);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+/* Secondary copy — bumped above default text-sm / text-xs */
+.text-secondary {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--body);
+}
+
+.text-meta {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--body);
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-fg);
+}
