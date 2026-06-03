@@ -1,0 +1,11 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/AbhiResume.pdf
+  Cache-Control: public, max-age=86400
+
+/logos/*
+  Cache-Control: public, max-age=604800, immutable
