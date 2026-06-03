@@ -6,6 +6,7 @@ import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import { Nav } from "@/components/nav";
+import { RecruiterSnapshot } from "@/components/recruiter-snapshot";
 import { Skills } from "@/components/skills";
 import { VisaSection } from "@/components/visa-section";
 import { site } from "@/content/site";
@@ -36,13 +37,14 @@ export default function Home() {
       <Nav />
       <main id="main">
         <Hero />
+        <RecruiterSnapshot />
         <About />
         <Experience />
         <Skills />
         <Achievements />
         <Education />
-        <VisaSection />
         <Contact />
+        <VisaSection />
       </main>
       <Footer />
     </>

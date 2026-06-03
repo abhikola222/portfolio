@@ -10,13 +10,15 @@ export const metadata: Metadata = {
   description: site.description,
   keywords: [
     "software engineer",
-    "AWS",
+    "backend engineer",
+    "fullstack engineer",
     "AI infrastructure",
+    "mid-level engineer",
+    "AWS",
     "Germany jobs",
-    "Chancenkarte",
+    "no visa sponsorship",
     "EU Blue Card",
     "Oldenburg",
-    "platform engineer",
   ],
   openGraph: {
     title: site.title,
