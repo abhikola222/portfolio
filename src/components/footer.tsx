@@ -11,7 +11,7 @@ export function Footer() {
         <p>
           © {year} {site.name}. Built with Next.js · Geist design tokens.
         </p>
-        <p className="font-mono text-meta">Last updated June 2026</p>
+        <p className="font-mono text-meta">Last updated July 2026</p>
       </div>
     </footer>
   );
