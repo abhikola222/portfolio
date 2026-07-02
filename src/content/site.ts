@@ -26,20 +26,16 @@ export const site = {
   ] as const,
   contact: {
     email: "abhikola222@gmail.com",
-    phone: "+91 91007 34724",
-    phoneNote: "India number · WhatsApp OK · based in Oldenburg (CET)",
+    phone: "+49 162 800 1821",
+    phoneNote: "German number · based in Oldenburg (CET)",
     linkedin: "https://linkedin.com/in/akola",
     linkedinLabel: "linkedin.com/in/akola",
+    github: "https://github.com/abhikola222",
+    githubLabel: "github.com/abhikola222",
   },
   resume: {
-    pdf: {
-      href: "/AbhiResume.pdf",
-      label: "Download PDF",
-    },
-    googleDrive: {
-      href: "https://drive.google.com/file/d/1REPLACE_WITH_YOUR_FILE_ID/view?usp=sharing",
-      label: "Open in Google Drive",
-    },
+    href: "https://drive.google.com/file/d/1y80Zzgkp5FCF5RgzOk58mWoSm4qo92QP/view?usp=sharing",
+    label: "Resume",
   },
   nav: [
     { href: "#about", label: "About" },

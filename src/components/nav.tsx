@@ -1,8 +1,5 @@
-"use client";
-
 import { site } from "@/content/site";
 import { pageContainer } from "@/lib/layout";
-import { ThemeToggle } from "./theme-toggle";
 
 export function Nav() {
   return (
@@ -30,7 +27,6 @@ export function Nav() {
           ))}
         </ul>
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <a
             href={`mailto:${site.contact.email}`}
             className="hidden rounded-md bg-primary px-3 py-1.5 text-base font-medium text-on-primary transition-opacity hover:opacity-90 sm:inline-block"

@@ -1,5 +1,5 @@
 import { site } from "@/content/site";
-import { Mail, Phone } from "lucide-react";
+import { Github, Mail, Phone } from "lucide-react";
 import { Section } from "./section";
 
 export function Contact() {
@@ -41,6 +41,18 @@ export function Contact() {
           >
             <span className="font-medium text-ink">LinkedIn</span>
             <span className="text-link">{site.contact.linkedinLabel}</span>
+          </a>
+          <a
+            href={site.contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-lg border border-hairline bg-canvas px-5 py-4 text-base transition-colors hover:border-hairline-strong hover:bg-canvas-soft-2"
+          >
+            <Github className="h-5 w-5 text-body" aria-hidden />
+            <span>
+              <span className="block font-medium text-ink">GitHub</span>
+              <span className="text-link">{site.contact.githubLabel}</span>
+            </span>
           </a>
         </div>
       </div>

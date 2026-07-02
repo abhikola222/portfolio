@@ -1,4 +1,3 @@
-import { Providers } from "@/components/providers";
 import { site } from "@/content/site";
 import type { Metadata } from "next";
 import { GeistMono } from "geist/font/mono";
@@ -36,8 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      suppressHydrationWarning
-      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable} dark`}
     >
       <body className="antialiased">
         <a
@@ -46,7 +44,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   );

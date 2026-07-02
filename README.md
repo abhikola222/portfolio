@@ -30,6 +30,6 @@ Push to GitHub and import the repo on [Vercel](https://vercel.com). No extra con
 - `design.md` — full specification
 - `vercel/DESIGN.md` — color & typography tokens
 
-## Update resume PDF
+## Update resume link
 
-Replace `public/AbhiResume.pdf` (and root `AbhiResume.pdf` if kept in sync).
+Update `site.resume.href` in `src/content/site.ts` with the current Google Drive URL.

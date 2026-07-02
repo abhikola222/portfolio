@@ -1,8 +1,15 @@
-export const about = `I'm a software engineer with ~3 years of experience building backend and platform systems at scale. At GoDaddy (SDE-2), I shipped Go and Python services on AWS (Docker, CDK), improved developer workflows with React and GraphQL, and owned infra end-to-end — from Bedrock batch pipelines to observability standards across the org. Before that, at Amazon (SDE-1), I built large-scale backend systems serving 1M+ employees. Previously remote for GoDaddy from India; now based in Oldenburg, Germany.`;
+export const aboutPoints = [
+  "3+ years of software engineering experience",
+  "Built internal AI tools and experimentation infrastructure for teams at GoDaddy",
+  "Built payroll systems at Amazon supporting 1M+ Amazon employees",
+  "Relocated to Oldenburg, Germany after completing my role at GoDaddy",
+  "Open to software engineering roles, focused on backend, AI, and cloud",
+  "Comfortable building production UIs too",
+] as const;
 
 export const humanLanguages = [
   { language: "English", level: "Fluent" },
-  { language: "German", level: "A2 certified · B1 in progress" },
+  { language: "German", level: "A2 waiting for results" },
   { language: "Hindi", level: "Fluent" },
   { language: "Telugu", level: "Fluent" },
   { language: "Japanese", level: "JLPT N5" },

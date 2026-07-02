@@ -24,7 +24,7 @@ const personJsonLd = {
     addressRegion: "Niedersachsen",
     addressCountry: "DE",
   },
-  sameAs: [site.contact.linkedin],
+  sameAs: [site.contact.linkedin, site.contact.github],
 };
 
 export default function Home() {

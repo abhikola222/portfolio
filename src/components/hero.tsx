@@ -1,8 +1,8 @@
-import { ResumeDropdown } from "@/components/resume-dropdown";
+import { ResumeLink } from "@/components/resume-link";
 import { Tag } from "@/components/tag";
 import { site } from "@/content/site";
 import { pageContainer } from "@/lib/layout";
-import { ArrowDown, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, MapPin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -50,7 +50,7 @@ export function Hero() {
             <Mail className="h-4 w-4" aria-hidden />
             Email
           </a>
-          <ResumeDropdown />
+          <ResumeLink />
           <a
             href={site.contact.linkedin}
             target="_blank"
@@ -59,6 +59,15 @@ export function Hero() {
           >
             <Linkedin className="h-4 w-4" aria-hidden />
             LinkedIn
+          </a>
+          <a
+            href={site.contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-hairline bg-canvas px-5 py-2.5 text-base font-medium text-ink transition-colors hover:border-hairline-strong hover:bg-canvas-soft-2"
+          >
+            <Github className="h-4 w-4" aria-hidden />
+            GitHub
           </a>
           <a
             href="#visa"

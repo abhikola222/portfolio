@@ -178,7 +178,7 @@ One scrollable landing page with anchored sections — best for recruiters skimm
 
 | # | Section ID | Title | Purpose |
 |---|------------|-------|---------|
-| 1 | `hero` | — | Name, role, one-line value prop, CTAs (Email, LinkedIn, Resume PDF) |
+| 1 | `hero` | — | Name, role, one-line value prop, CTAs (Email, LinkedIn, Resume link) |
 | 2 | `visa` | Working in Germany | **Recruiter-critical** — Oldenburg base, Anmeldung, EU Blue Card salary & start timeline, FAQ, sources |
 | 3 | `about` | About | Short narrative: platform/AI infra focus, relocation intent |
 | 4 | `experience` | Experience | GoDaddy, Amazon — bullets from resume |
@@ -189,7 +189,7 @@ One scrollable landing page with anchored sections — best for recruiters skimm
 
 ### 4.3 Optional v2 routes
 
-- `/resume` — embedded or downloadable PDF (`AbhiResume.pdf`)
+- `/resume` — optional redirect to the externally hosted resume
 - `/projects` — case studies if you add write-ups later
 - `/de` — German mirror of visa + hero (recruiter convenience)
 
@@ -197,7 +197,7 @@ One scrollable landing page with anchored sections — best for recruiters skimm
 
 ## 5. Content — sourced from resume
 
-**Source file:** `AbhiResume.pdf` (last updated November 2025) — **update PDF before launch:** GoDaddy end date **17 Jun 2026** (not “Present”); note remote-from-India at GoDaddy, on-site Hyderabad at Amazon
+**Resume source:** Current Google Drive document linked from `src/content/site.ts`.
 
 ### 5.1 Hero copy (draft)
 
@@ -206,14 +206,14 @@ One scrollable landing page with anchored sections — best for recruiters skimm
 - **Subline:** Building scalable systems on AWS · **Available from 18 June 2026** · Based in **Oldenburg, Germany** (Chancenkarte → EU Blue Card)
 - **Location line:** **Oldenburg, Niedersachsen** · Registered (**Anmeldung** complete) · Open to on-site / hybrid in Germany and remote-friendly EU roles
 - **Availability:** GoDaddy last day **17 June 2026** — actively seeking full-time roles from **18 June 2026**
-- **CTAs:** Email · LinkedIn · Download resume
+- **CTAs:** Email · LinkedIn · Open resume
 
 ### 5.2 Contact
 
 | Field | Value |
 |-------|--------|
 | Email | abhikola222@gmail.com |
-| Phone | +91 91007 34724 |
+| Phone | +49 162 800 1821 |
 | LinkedIn | linkedin.com/in/akola |
 
 ### 5.3 Experience (implement verbatim from resume)
@@ -409,7 +409,7 @@ Display as a short callout box in the visa section — helps recruiters understa
 ### Phase 1 — Core page
 - Layout, nav, footer, theme tokens (Geist-aligned)
 - Hero + Experience + Skills + Education + Achievements from §5
-- Resume PDF in `/public/AbhiResume.pdf`
+- External resume link from the hero
 
 ### Phase 2 — Chancenkarte section
 - Recruiter summary, FAQ accordion, hire steps, source links
@@ -433,9 +433,7 @@ Display as a short callout box in the visa section — helps recruiters understa
 portfolio/
 ├── design.md                 # this file (content, IA, visa copy)
 ├── vercel/DESIGN.md          # Vercel-design-analysis skill — colors, type, components
-├── AbhiResume.pdf            # source resume
-├── public/
-│   └── AbhiResume.pdf        # served copy (sync with root)
+├── public/                   # static site assets
 ├── src/
 │   app/
 │   │   layout.tsx            # Geist fonts, metadata
